@@ -1,51 +1,59 @@
 /* SMALL */
 @media screen and (max-width: 480px) {
-body {
-    background-color: red;
-}
-div#small {
-    width: fit-content;
-    overflow: hidden;
-    padding-left: 0;
-    font: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    font-family: 'Courier New', Courier, monospace;
-    position: absolute;
-}
-div#medium {
-    
-}
-div#large {
-    
-}
-}
-/* MEDIUM */
-@media screen and (min-width: 480px) and (max-width: 1024px), (width: 480px) {
-body {
-    background-color: green;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    body {
+        background-color: red;
     }
-#small {
-    
+
+    div#small {
+        width: fit-content;
+        overflow: hidden;
+        padding-left: 0;
+        font: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Courier New', Courier, monospace;
+        position: absolute;
+    }
+
+    div#medium {
+        display: none;
+    }
+
+    div#large {
+        display: none;
+    }
 }
 
-#large {
-   
-}
+/* MEDIUM */
+@media screen and (min-width: 480px) and (max-width: 1024px),
+(width: 480px) {
+    body {
+        background-color: green;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    #small {
+        display: none;
+    }
+
+    #large {
+        display: none;
+    }
 }
 
 /* LARGE */
-@media screen and (min-width: 1024px), (width: 1024px) {
-body {
+@media screen and (min-width: 1024px),
+(width: 1024px) {
+    body {
         background-color: blue;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
-        }
-#small {
-    
-}
+    }
 
-#medium {
-    
-}
+    #small {
+        display: none;
+    }
+
+    #medium {
+        display: none;
+    }
 }
